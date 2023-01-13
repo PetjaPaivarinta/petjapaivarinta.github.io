@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JW_TRIPPIE_REF.mp3 | ONLYFILES</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="/static/images/favicon.png">
+<meta property="og:title" content="JW_TRIPPIE_REF.mp3" />
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="/static/images/music-disk.png" />
+<meta property="og:description" content="Onlyfiles.io is free file-sharing service." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Assets/main.css">
+<script src="https://kit.fontawesome.com/e480c8197c.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/index.js"></script>
+<script src="js/player.js"></script>
+<style>
+        #player {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            justify-content: center;
+            
+            margin-top:15px;
+            align-items: center;
+        }
+        #player i {
+          color: #666;
+        }
+        #volume {
+          position: relative;
+          height: 5px;
+          width: 200px;
+          background: #555;
+          border-radius: 15px;
+          margin-left: 15px;
+          margin-right: 25px;
+        }
+        #volume .ui-slider-range-min {
+          height: 5px;
+          width: 200px;
+          position: absolute;
+          background: #00aff0;
+          border: none;
+          border-radius: 10px;
+          outline: none;
+        }
+        #volume .ui-slider-handle {
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          background: #FFF;
+          position: absolute;
+          margin-left: -8px;
+          margin-top: -8px;
+          cursor: pointer;
+          outline: none;
+          -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.41); 
+          box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.41);
+        }
+    </style>
+<script>
+
+    </script>
+</head>
+<script>
+    function toggleMode() {
+        document.body.classList.toggle('dark-mode'); 
+        document.getElementById("audio-player-container").classList.toggle('player-dark')
+        document.getElementById("jackb").classList.toggle('header-background-dark')
+        
+        console.log(document.getElementById("jackb2").getAttribute('src'));
+
+        if (document.body.classList.contains('dark-mode') == false) {
+            if (document.getElementById("jackb2").getAttribute('src') == "/images/music-disk.png") {
+                document.getElementById("jackb2").classList.remove('invert-colour')
+            }
+            document.getElementById("dark-mode-button").style.display = "block";
+            document.getElementById("light-mode-button").style.display = "none";
+            document.getElementById("download-btn-1").classList.remove('invert-colour')
+            document.getElementById("audio-btn-1").classList.remove('invert-colour')
+            document.getElementById("share-btn-1").classList.remove('invert-colour')
+            localStorage.setItem("theme", "light");
+        } else {
+            if (document.getElementById("jackb2").getAttribute('src') == "/images/music-disk.png") {
+                document.getElementById("jackb2").classList.add('invert-colour')
+            }
+            document.getElementById("dark-mode-button").style.display = "none";
+            document.getElementById("light-mode-button").style.display = "block";
+            document.getElementById("download-btn-1").classList.add('invert-colour')
+            document.getElementById("audio-btn-1").classList.add('invert-colour')
+            document.getElementById("share-btn-1").classList.add('invert-colour')
+            localStorage.setItem("theme", "dark");
+        }
+    }
+
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme == "dark") {
+        document.body.classList.add("dark-mode");
+        if (document.getElementById("jackb2").getAttribute('src') == "/images/music-disk.png") {
+                document.getElementById("jackb2").classList.add('invert-colour')
+            }
+        document.getElementById("audio-player-container").classList.add('player-dark')
+        document.getElementById("jackb").classList.add('header-background-dark')
+        document.getElementById("download-btn-1").classList.add('invert-colour')
+        document.getElementById("audio-btn-1").classList.add('invert-colour')
+        document.getElementById("share-btn-1").classList.add('invert-colour')
+        document.getElementById("dark-mode-button").style.display = "none";
+        document.getElementById("light-mode-button").style.display = "block";
+    } else if (currentTheme == "light") {
+        document.body.classList.add("light-mode");
+        document.getElementById("audio-player-container").classList.remove('player-dark')
+        document.getElementById("jackb").classList.remove('header-background-dark')
+    }
+
+    
+</script>
+<body>
+<div id="warning-banner">
+Onlyfiles will be suspending service on January 21, 2023. All files will be deleted. Thank you for your support.
+</div>
+<div class="container">
+<div class="logoarea">
+<a href="https://onlyfiles.io/"><img class="logo" src="/static/images/OF.svg"></a>
+<div class="logosubtext">Russian warship, go f*** yourself</div>
+</div>
+<div class="artwork">
+</div>
+<div class="songtitle">JW_TRIPPIE_REF.mp3</div>
+<div id="player">
+<i class="fa fa-volume-down"></i>
+<div id="volume"></div>
+<i class="fa fa-volume-up"></i>
+</div>
+<div style="font-family: 'gm';font-size: 13px;color: #00b1e5;">
+</div>
+<audio src="/get/d63b8c59e2ef496e982e894fe995fdd6/JW_TRIPPIE_REF.mp3" id="audio-player"></audio>
+<div class="controls">
+<div class="playpause" id="playpause"><i class="fas fa-play"></i></div>
+<div class="progressbar">
+<div class="pbt">
+<div class="timedone" id="timedone">00:00</div>
+<div class="timetotal" id="timetotal">00:00</div>
+</div>
+<div class="pbb" id="pbb">
+<div class="pbbackground" id="pbbackground"></div>
+<div class="pbforeground" id="pbforeground"></div>
+</div>
+</div>
+<div class="download" onclick="downloadURI('/download/d63b8c59e2ef496e982e894fe995fdd6/JW_TRIPPIE_REF.mp3','JW_TRIPPIE_REF.mp3');"><i class="fas fa-download"></i></div>
+</div>
+</div>
+
+<script async src="https://zatnoh.com/pw/waWQiOjExNDMwNTAsInNpZCI6MTE3ODMzOSwid2lkIjo0MDk0MzIsInNyYyI6Mn0=eyJ.js"></script>
+<script type="text/javascript" src="/static/js/index.js"></script>
+<script type="text/javascript" src="/static/js/particles.js"></script>
+<script type="text/javascript" src="/static/js/player.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script>
+        $("#volume").slider({
+        min: 0,
+        max: 100,
+        value: 100,
+            range: "min",
+        slide: function(event, ui) {
+            SetVolume(ui.value);
+        }
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78909c587fc2fe20","version":"2022.11.3","r":1,"token":"bf9da2ec7413430c91a24f3eab7c9725","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
