@@ -1,2 +1,0 @@
-# petjapaivarinta.github.io
-yefiles
