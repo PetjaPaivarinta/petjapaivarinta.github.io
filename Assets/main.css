@@ -30,7 +30,6 @@ body {
 
 .container {
   color: #fff;
-  text-shadow: 0 0 10px #333;
 
   margin: 0 auto;
   text-align: center;
@@ -304,7 +303,7 @@ li span {
 .playpause {
   min-width: 54px;
   min-height: 54px;
-  background-color: #00aff0;
+  background-color: #00ff4c;
   color: #fff;
   border-radius: 27px;
   font-size: 22px;
@@ -327,7 +326,7 @@ li span {
 .download {
   min-width: 54px;
   min-height: 54px;
-  background-color: #00aff0;
+  background-color: #00ff4c;
   color: #fff;
   border-radius: 27px;
   font-size: 22px;
@@ -339,7 +338,7 @@ li span {
 .download-center {
   min-width: 54px;
   min-height: 54px;
-  background-color: #00aff0;
+  background-color: #00ff4c;
   color: #fff;
   border-radius: 27px;
   font-size: 22px;
