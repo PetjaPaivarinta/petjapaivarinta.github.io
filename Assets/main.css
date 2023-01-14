@@ -18,7 +18,7 @@ body {
 
 body {
   align-items: center;
-  background: radial-gradient(#5c456b, #50017e);
+  background: radial-gradient(#ff8f5b, #50017e);
   height: 97vh;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -169,13 +169,13 @@ li span {
   margin-bottom: 30px;
 }
 .logo {
-  width: 284px;
-  height: 86px;
+  width: 260px;
+  height: 79.73px;
 }
 .logosubtext {
   font-family: 'Roboto';
   color: #313131;
-  font-size: 19px;
+  font-size: 18px;
 }
 .filearea {
   width: 100%;
