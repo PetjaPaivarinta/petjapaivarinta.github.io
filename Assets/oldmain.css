@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   src: url(/Assets\fonts\gilmer-light\Gilmer-Light.woff2) format("woff2"),
     url(/Assets\fonts\gilmer-light\Gilmer-Light.woff) format("woff");
   font-weight: 400;
@@ -74,7 +74,7 @@ body {
   height: 43px;
 }
 .logosubtext {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   color: #313131;
   font-size: 16px;
 }
@@ -109,7 +109,7 @@ body {
 }
 .uploadtext {
   font-size: 23px;
-  font-family: 'gb';
+  font-family: ''Roboto'';
   color: #313131;
   margin-bottom: 4px;
   margin-top: 7px;
@@ -134,16 +134,16 @@ body {
 .file-list-title {
   font-size: 24px;
   color: #313131;
-  font-family: 'gb';
+  font-family: ''Roboto'';
   margin-bottom: 5px;
 }
 .file-line-title {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   font-size: 18px;
   line-height: 27px;
 }
 .file-line-filesize {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   color: gray;
   line-height: 27px;
 }
@@ -207,7 +207,7 @@ body {
 .songtitle {
   font-size: 26px;
   color: #313131;
-  font-family: 'gb';
+  font-family: ''Roboto'';
   margin-top: 15px;
   word-break: break-all;
 }
@@ -217,12 +217,12 @@ body {
   margin-top: 20px;
 }
 .timedone {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   font-size: 17px;
   color: #313131;
 }
 .timetotal {
-  font-family: 'gb';
+  font-family: ''Roboto'';
   font-size: 17px;
   color: #313131;
 }
