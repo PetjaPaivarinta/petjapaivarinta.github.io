@@ -1,16 +1,17 @@
 const firebaseConfig = {
   // Add your firebase config here
-    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    projectId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    storageBucket: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    messagingSenderId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-    measurementId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  apiKey: "AIzaSyBaAfbl_UT82HSikTk-_yl40ff8RhN97Jc",
+  authDomain: "yefiles-48228.firebaseapp.com",
+  projectId: "yefiles-48228",
+  storageBucket: "yefiles-48228.appspot.com",
+  messagingSenderId: "892088058558",
+  appId: "1:892088058558:web:859399b66a182e40b014ef",
+  measurementId: "G-3KX2LJNCVG"
   };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('image');

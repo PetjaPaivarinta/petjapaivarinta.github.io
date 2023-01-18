@@ -196,14 +196,16 @@ li span {
   transition-delay: 0.6s;
   transition: flex 0.9s cubic-bezier(0.37, 0.51, 0, 0.95);
 }
+#upload {
+  margin-top: 7em;
+  background-color: #f6f6f6;
+}
 button {
   height: 63px;
   /* Rounded corner downloadbutton */
   border-radius: 15px;
-  /* grey black background */
-  background-color: #ffffff;
-  /* white text */
   font-size: 1.5rem;
+  background-color: white;
   font-family: "Roboto";
   color: #a10064;
   /* text decoration none */
@@ -213,7 +215,6 @@ button {
   cursor: pointer;
   /* Center text and image */
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -260,7 +261,7 @@ button {
 #downimg {
   width: 30px;
   height: 30px;
-  margin: 10px;
+  margin-left: 10px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -297,8 +298,6 @@ a {
   font-family: "Roboto";
   font-size: 1rem;
   color: #580246;
-  margin-bottom: 4px;
-  margin-top: 7px;
 }
 .file-list {
   width: 100%;
