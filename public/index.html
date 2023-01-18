@@ -17,7 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link type="text/css" rel="stylesheet" href="Assets/main.css" />
     <link rel="icon" type="image/png" href="Assets/images/yf_logo_idea.png" />
-    <script type="text/javascript" src="JS\main.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="module" src="JS/app.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -28,7 +29,7 @@
     <![endif]-->
     <div class="uploadbox" id="uploadbox" style="position: relative">
       <div class="logoarea">
-        <img class="logo" src="Assets/images/yf_logo_idea.png" />
+        <img class="logo" src="Assets/images/yf_logo_idea.png" alt="logo" />
         <div class="logosubtext">yecordians stand up</div>
       </div>
       <div
@@ -48,28 +49,14 @@
         <div class="uploadtext2" id="fileareatext2">
           .mp3, .m4a, .wav, .ogg, .aiff, .flac, .zip
         </div>
-        <button id="upload" onclick="uploadImage()">Upload</button>
+      
       </div>
       </div>
-      <div class="file-list" id="file-list" style="margin-top: 0px"></div>
-      <div
-      id="html5_1gmm70ng0uo91t269bsg04n0b5_container"
-      class="moxie-shim moxie-shim-html5"
-        style="
-          position: absolute;
-          top: 133px;
-          left: 35px;
-          width: 940px;
-          height: 372px;
-          overflow: hidden;
-          z-index: 0;
-        "
-      ></div>
-        <input 
+      <input
         id="file"
         type="file"
         style="
-          opacity: 0;
+          opacity: 1;
           z-index: 1000;
           border: none;
           border-radius: 3px;
@@ -78,16 +65,14 @@
           left: 0px;
           width: 100%;
           top: 25vh;
-          bottom: 29vh;
+          bottom: 34vh;
         "
         multiple
         accept=".mp3,.m4a,.wav,.ogg,.flac,.aiff,.zip"
-        tabindex="-1"
-      />
+        tabindex="-1"  />
 
-     
-    
-      
+        <button id="upload" onclick="uploadImage()">Upload<img id="uping" src="Assets/images/upload.png" alt="none"/></button>
+        
       <div style="margin-top: 100px;" id="ShowUniqueID" hidden><p>Unique ID</p><input type="text" id="showunique"
         value="23456" disabled></input></div>
         <div class="Download" id="downloadiv">
@@ -100,10 +85,9 @@
         </div>
       <div>
     </div>
-    <script>
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
     </body>
     
      

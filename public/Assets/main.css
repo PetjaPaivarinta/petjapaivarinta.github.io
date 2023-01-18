@@ -184,13 +184,13 @@ li span {
   font-size: 18px;
 }
 .filearea {
+  height: 600px;
   width: 100%;
   flex: 1;
   background-color: #f6f6f6;
   outline-style: dashed;
   outline: #6b00a8 4px dashed;
   border-radius: 21px;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition-delay: 0.6s;
@@ -201,29 +201,35 @@ li span {
   background-color: #f6f6f6;
 }
 button {
+  cursor: pointer;
   height: 63px;
   /* Rounded corner downloadbutton */
-  border-radius: 15px;
-  font-size: 1.5rem;
-  background-color: white;
-  font-family: "Roboto";
-  color: #a10064;
+  border-radius: 10px;
+  /* grey black background */
+  background-color: #1f6ab4;
+  /* white text */
+  color: rgb(78, 78, 78);
+  /* padding */
+  padding: 10px 20px;
   /* text decoration none */
   text-decoration: none;
+  /* font size */
+  font-size: 20px;
+  /* font family */
+  font-family: "Open Sans", sans-serif;
+  /* border none */
   border: none;
   /* cursor pointer */
   cursor: pointer;
   /* Center text and image */
-  text-align: center;
   justify-content: center;
   align-items: center;
+
 }
 #uping {
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
   border: 0px solid #fff;
   cursor: pointer;
   transition: 0.5s;
