@@ -27,9 +27,7 @@
         <div class="logosubtext">yecordians stand up</div>
       </div>
       <div
-      id="filearea"
-      class="filearea"
-      style="cursor: pointer; position: relative; z-index: 1"
+      style="cursor: pointer; position: relative; z-index: 1; height: 300px;"
     >
       <div class="fileareatext">
 
@@ -46,7 +44,7 @@
       type="file"
         id="file"
         style="
-          opacity: 1;
+          opacity: 0.2;
           z-index: 1000;
           border: none;
           border-radius: 3px;
@@ -63,7 +61,7 @@
 
         <button id="upload" onclick="uploadImage()">Upload<img id="uping" src="Assets/images/upload.png" alt="none"/></button>
         
-      <div style="margin-top: 100px;" id="ShowUniqueID" hidden><p>Unique ID</p><input type="text" id="showunique"
+      <div id="ShowUniqueID" hidden><p>Unique ID</p><input type="text" id="showunique"
         value="23456" disabled></input></div>
         <div class="Download" id="downloadiv">
           <h2 class="uploadtext">Receive File</h2>
@@ -72,6 +70,7 @@
          <button class="uploadtext2" id="show" onclick="showimage()">Download<img id="downimg" src="Assets/images/download.png" alt="none"/></button>
         </div>
         </div>
+        
     </body>
     <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase.js"></script>
     <script src="JS/main.js"></script>
